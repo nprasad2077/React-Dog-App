@@ -9,22 +9,27 @@ function BreedList() {
     const [post, setPost] = React.useState(null);
 
     React.useEffect(() => {
-        axios.get(urlRandomMax).then((response) => {
+        axios.get(url).then((response) => {
             setPost(response.data);
-            console.log(response.data);
+            // console.log(response.data);
         });
     }, []);
 
     if (!post) {return null;}
 
-
-  return (
-    <ul>
-        {post.message.map(breed => 
-            <li>{breed}</li>           
-        )}
-    </ul>
-  )
+    const map = Object.entries(post.message);
+    const keys = Object.keys(post.message)
+    console.log(keys);
+    return (
+        <button>
+            {keys.map(breed =>
+                <li>
+                    {breed}
+                </li>
+            )}
+        </button>
+    )
 }
 
 export default BreedList
+
