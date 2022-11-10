@@ -4,6 +4,11 @@ import DogData from './components/DogData';
 import BreedList from './components/BreedList';
 
 function App() {
+
+
+
+
+
   return (
     <div>
       {/* <DogData /> */}
