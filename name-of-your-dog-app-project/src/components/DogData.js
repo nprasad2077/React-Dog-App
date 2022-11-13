@@ -9,7 +9,7 @@ function DogData() {
     const [post, setPost] = React.useState(null);
 
     React.useEffect(() => {
-        axios.get(url).then((response) => {
+        axios.get(urlRandom).then((response) => {
             setPost(response.data);
             console.log(response.data);
         });
