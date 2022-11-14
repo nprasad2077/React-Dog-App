@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: tan;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
@@ -25,4 +28,15 @@ code {
   margin: auto;
   height: 100%;
   width: 100%;
+}
+
+.links {
+  display: flex;
+  text-align: center;
+  margin: 30px;
+  margin-left: 41%;
+}
+
+.search {
+  margin-left: 20px;
 }
