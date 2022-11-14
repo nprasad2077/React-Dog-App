@@ -46,13 +46,3 @@ function BreedList() {
 }
 
 export default BreedList
-
-// (
-//     <ul>
-//         {keys.map(breed =>
-//             <li>
-//                 {breed}
-//             </li>
-//         )}
-//     </ul>
-// )
