@@ -25,7 +25,7 @@ function App() {
   
   useEffect(() => {
     getRandomDog()
-  }, [randomDogBreed])
+  }, [randomDogBreed])   //Array tells react to 'skip' effect if the value has not changed between renders. 
 
 
   return (
